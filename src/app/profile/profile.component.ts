@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {AuthService} from '../auth.service';
 
 @Component({
@@ -7,6 +7,9 @@ import {AuthService} from '../auth.service';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit {
+
+  elementFUrl = 'assets/elements/ng-web-comp-first-element.js';
+  elementSUrl = 'assets/elements/ng-web-comp-second-element.js';
 
   token: string;
 
@@ -17,7 +20,7 @@ export class ProfileComponent implements OnInit {
       console.log('Token subscribed');
       this.token = value;
     });
-    // this.auth.localAuthSetup();
   }
+
 
 }

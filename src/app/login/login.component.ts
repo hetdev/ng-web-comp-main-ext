@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  elementUrl = 'assets/elements/ng-web-comp-first-element.js';
+
   constructor() { }
 
   ngOnInit() {

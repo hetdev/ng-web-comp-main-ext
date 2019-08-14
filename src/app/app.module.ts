@@ -7,6 +7,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { CallbackComponent } from './callback/callback.component';
+import {LazyElementsModule} from '@angular-extensions/elements';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -19,7 +20,8 @@ import { CallbackComponent } from './callback/callback.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    LazyElementsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
